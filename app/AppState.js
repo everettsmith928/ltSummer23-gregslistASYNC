@@ -4,7 +4,10 @@ import { isValidProp } from './utils/IsValidProp.js'
 import { loadState } from './utils/Store.js'
 
 class ObservableAppState extends EventEmitter {
+  jobs = []
+  houses = []
 
+  activeHouse = null
   /** @type {import('./models/Car.js').Car[]} */
   cars = []
 
